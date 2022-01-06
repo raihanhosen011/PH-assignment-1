@@ -1,0 +1,223 @@
+/* ============ GOOGLE FONT ============ */
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,400&family=Yeseva+One&display=swap');
+
+
+/* ============ BASE CSS ============ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+  background-color: hsl(0, 0%, 100%); 
+  color: hsla(0, 1%, 27%, 0.959);
+  font-family: "Poppins", sans-serif; 
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+p{
+  font-weight: 500;
+}
+p,h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
+
+
+/* ============ RE-USEABLE CLASS ============ */
+.container{
+  max-width: 70rem;
+  margin: auto;
+  padding: 0 0.5rem;
+}
+.section, section{
+  padding: 1.7rem 0;
+}
+.section-title {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  font-size: 1.7rem;
+  margin-bottom: 2.5rem;
+}
+
+button{
+  border: none;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+}
+.button{
+  padding: 0.6rem 1.6rem;
+  color: hsl(0, 0%, 100%);
+  background-color: #FFB04A;
+  font-size: 1rem;
+  border-radius: .3rem;
+  transition: .3s;
+  cursor: pointer;
+}
+.button:hover{
+  opacity: .9;
+}
+
+
+/* ============ HERO SECTION ============ */
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-content .left-side, .hero-content .right-side{
+  width: 50%;
+}
+
+.hero-image {
+  text-align: center;
+}
+
+.home-texts-title {
+  padding-left: .7rem;
+  border-left: 3px solid hsl(17, 100%, 69.6%);
+  font-family: 'Yeseva One', cursive;
+  font-size: 2.3rem;
+  margin-bottom: .3rem;
+}
+.home-texts-title h1{
+  font-weight: 100;
+}
+.home-texts-title h1:first-child {
+  transform: translateY(-10px);
+  color: hsl(0, 0%, 20%);
+}
+.home-texts-title h1:last-child {
+  color: hsl(17, 100%, 69.6%);
+  margin-top: -.5rem;
+  transform: translateY(10px)
+}
+
+.home-texts-desc {
+  margin: 1.3rem 0;
+  width: 80%;
+}
+
+.hero-image img {
+  width: 26rem;
+  margin: auto;
+}
+
+
+/* ============ MISSION SECTION ============ */
+/* -- being card colors -- */
+.card-one{
+  background-color: #7949F92B;
+}
+.card-two{
+  background-color: #f4eeff;
+}
+.card-three{
+  background-color: #FFEEEE;
+}
+/* -- end card colors -- */
+.mission-section-title h1{
+  color: #13103A;
+}
+.mission-section-title h1 span{
+  color: hsl(17, 100%, 69.6%);
+}
+
+.mission-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mission-card {
+  padding: 1.6rem;
+  border-radius: 1.5rem;
+}
+.mission-card-image {
+  width: 8.8rem;
+}
+.mission-card-title{
+  color: hsl(0, 0%, 5%);
+  margin-bottom: .7rem;
+  margin-top: .2rem;
+}
+.mission-card-title h2{
+  font-weight: 600;
+}
+.mission-card-desc{
+  margin-bottom: .4rem;
+}
+
+
+/* ============ ABOUT SECTION ============  */
+.about-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about-content .left-side {
+  margin-right: 3.5rem;
+}
+
+.first-about-section .left-side,.second-about-section .right-side {
+  position: relative;
+}
+.about-image img:first-child{
+  position: relative;
+  z-index: 1;
+}
+
+.first-about-section .left-side-shape {
+  position: absolute;
+  left: -6rem;
+  width: 13rem;
+  top: 4rem;
+}
+.second-about-section .right-side-shape {
+  position: absolute;
+  right: -4rem;
+  width: 9rem;
+  bottom: -3rem;
+}
+
+.about-image {
+  width: fit-content;
+}
+.about-image {
+  min-width: 25rem;
+}
+.about-texts-title {
+  font-size: 1.5rem;
+  color: hsl(0, 0%, 20%);
+}
+.about-texts-desc {
+  margin: 1rem 0;
+  width: 90%;
+  color: hsl(0, 0%, 40%);
+}
+
+
+/* ============ FOOTER SECTION ============  */
+.footer-section{
+  text-align: center;
+  background-color: #0B0D17;
+  color: rgb(247, 247, 247);
+  margin-top: 2rem;
+}
+
+.footer-content h1{
+  font-family: 'Lobster Two', cursive;
+  margin-bottom: .5rem;
+}
+.footer-content h1 span{
+  color: hsl(17, 100%, 69.6%);
+}
+.footer-content p{
+  color: #c4c4c4;
+}
